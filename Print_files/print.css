@@ -1,0 +1,70 @@
+
+@media print {
+  .heading-2 {
+    margin-bottom: 20px;
+  }
+  .panel .panel-body {
+    padding: 30px 30px 30px;
+  }
+  .general-info .toolbar {
+    float: right;
+    margin-top: 0;
+  }
+  .booking-ref {
+    margin-top: 14px;
+  }
+  .scoot-proctect-block .block-header span {
+    margin: 24px 0 0;
+  }
+  .print-scoot-thru {
+    background-color: #fff100 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .step-fare-details .payment-pricing {
+    background-color: #e6e6e6 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .print-fare-rules .panel-body {
+    background-color: #fffb76 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .flight-info .flight-package__flyBagEat {
+    background-color: #7DCEEF !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .print-disclaimer .panel-body {
+    border: none;
+    background: #f2f2f2 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .journey .media-left {
+    min-width: 70px;
+  }
+  .scoot-proctect-block figure {
+    width: 70px;
+  }
+  .scoot-proctect-block figcaption {
+    font-size: 14px;
+  }
+  .scoot-proctect-block .media-left {
+    padding-right: 30px;
+  }
+  .scoot-proctect-block img {
+    margin-bottom: 10px;
+  }
+  .scoot-proctect-block ul li {
+    padding-right: 10px;
+    width: 48%;
+  }
+  .col {
+    float: left;
+    width: auto;
+  }
+  .col.col-1,
+  .col.col-2 {
+    width: auto;
+  }
+  .scoot-proctect-block .block-header span {
+    text-align: right;
+  }
+}

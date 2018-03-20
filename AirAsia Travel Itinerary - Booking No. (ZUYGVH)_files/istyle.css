@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* THE BASIC */
+body {margin: 0; padding: 0;
+font-size: 14px; font-family:Arial, Helvetica, sans-serif; color:#000000;
+line-height: 17px; text-align:left;}
+/* HTML5 blocks - needed in older browsers */
+article, aside, figcaption, figure, footer, header, nav, section {display: block;}
+/* PARAGRAPHS */
+h1, h2, h3, h4 {margin: 13px 0 5px; font-weight: bold;}
+h1 {font-size: 36px; line-height:100%;}
+h2 {font-size: 24px; line-height:100%;}
+h3 {font-size: 14px; line-height:100%;}
+ul, ol {margin: 0; padding-left: 40px;} /* IE has a 40px margin-left instead */
+li {list-style-type:none; margin-left:-10px; line-height:16px;}
+li:before {content: "* "; }
+p {margin: 13px 0;}
+/* LINKS */
+a {text-decoration: none; color:#f20000;}
+a:link {color: #f20000;}
+a:visited {color: #f20000;}
+a:active {color: #f20000;}
+a:hover, a:focus {color: #f20000; text-decoration:underline; }
+a:active, a:hover {outline: none;} /* Remove dotted outline clicked links - Keeps outline on focus */
+a img {border: none;}
+/* FORMS */
+.form {background:#efefef; padding:20px; margin-top:15px}
+.form .item {clear:both;}
+.form label {font-size:14px; float: left;}
+fieldset { margin: 0; padding: 0; border: none;}
+input, button, select { vertical-align: middle;}
+select {-moz-appearance: none; -webkit-appearance: none;
+    background: url("images/arrow-down.png") no-repeat scroll 97% center #ffffff;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+	color: #666666;
+    padding: 6px 4px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    width: 208px;}
+input { background: #ffffff;
+	border: 1px solid #cccccc;
+	font-size:14px; 
+	color:#000000; 
+	padding: 7px;}
+/* BUTTONS */
+.button-grey { background-color:#999999;
+  border-radius:4px;
+  border:none;
+  cursor:pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight:bold;
+  color:#ffffff;
+  padding:10px 22px;
+  line-height:100%;
+}
+.button-grey:hover {
+  background-color:#666666;
+}
+.button-red { background-color:#f20000;
+  border-radius:4px;
+  border:none;
+  cursor:pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight:bold;
+  color:#ffffff;
+  padding:10px 22px;
+  line-height:100%;
+}
+
+button { background-color:#efefef;
+  border-radius:4px; 
+  border:1px solid #cccccc;
+  cursor:pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color:#000000;
+  padding:10px 10px;
+  text-align:left;
+}
+
+.button-red:hover {
+  background-color:#d80000;
+}	
+/* TABLES */
+table {border-collapse: collapse; /* Merges cell borders together */}
+td, th {}
+td:first-child, th:first-child {empty-cells: hide; /* Hide empty cells when they're the first in the row */}
+
+/* CONTENT START */
+#container {margin: 0 auto; width:730px; overflow:auto;}
+#mob-save-pdf {display:none; background:#000000; color:#ffffff; text-align:center; padding:15px; font-weight:bold;}
+#mob-save-pdf a {color:#ffffff;}
+
+#ti-header {overflow:hidden; margin-bottom:10px;}
+.logo {padding-left:10px; float:left;}
+.ti-right-col {float:right;}
+.save-and-print {}
+.save-button {float: right; padding:10px; text-align:center; vertical-align:middle;}
+.print-button {float: right; padding:10px 0; text-align:center; vertical-align:middle;}
+.print-invoice-button {float: right; margin: 7px; padding:6px 0; text-align:center; vertical-align:middle;}
+.ti-title {clear:right; float:right;}
+.ti-title-invoice {display:none;}
+.save-print-image {vertical-align:middle; padding-right:5px;}
+#ti-guest-pnr {overflow:auto;}
+.ti-guest {float:left;}
+.ti-guest-table {min-width:380px; max-width:600px; text-transform: none;}
+.ti-guest-paymentdetail-table {min-width:380px; max-width:600px;}
+.ti-pnr {float:right; padding:5px 0;}
+.ti-pnr-title {font-size:12px; font-weight:bold; text-align:center; padding:3px 0; }
+.ti-pnr-id {font-size:30px; text-align:center; color:#f20000; padding:3px 0;font-family:Serif;}
+.ti-pnr-barcode {padding: 3px 0;}
+.pnr-number{
+    font-size:30px;
+    text-align:left;
+    font-family:Times News Roman;
+    color:#f20000;
+}
+
+#divTransferJourney, #divFlightJourney {overflow:auto; padding:10px 0; page-break-inside:avoid;}
+.table-header-info {overflow:hidden;}
+.table-title {text-transform:uppercase; float:left; padding-top:14px;}
+.table-image {float:right;vertical-align:bottom;}
+.table-image-mmb {float:right;}
+.table-image-adjust {vertical-align:bottom;}
+.table-header {background:#333333; font-weight:bold; color:#ffffff; padding:10px; }
+.table-wrapper {}
+.table-first-col {background:#efefef; border:1px solid #cccccc; font-weight:bold; vertical-align:middle;}
+.table-second-col {background:#ffffff; border:1px solid #cccccc; font-size:12px;}
+
+.table-fine-line {
+    font-size:10px; padding:3px 3px 0; 
+     background-color: #efefef;
+    border: 1px solid #ccc;
+    color: #4c4c4c;
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+.table-fine-line-backtop {font-size:10px; padding:3px 3px 0; float:right;}
+.table-fine-line-notes {
+     background-color: #efefef;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    clear: both;
+    color: #4c4c4c;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px;
+
+}
+.table-fine-line-address {font-size:12px; padding:6px 15px 0;}
+.table-flythru-col {background:#cccccc; text-align:center; font-size:12px; padding:3px; border:1px solid #cccccc; }
+.table-flythru-col-addons {background:#cccccc; font-size:14px; padding:8px; border:1px solid #cccccc; }
+
+#divAddOns {overflow:auto; padding:20px 0; page-break-inside:avoid;}
+
+#divPaymentDetails {overflow:auto; padding:20px 0; page-break-inside:avoid;}
+.table-title-addons {text-transform:uppercase; float:left; padding-top:14px;}
+.table-title-payment {text-transform:uppercase; float:left; vertical-align:middle; padding-top:14px; width: 99%;}
+
+.table-GuestDetail { text-transform:capitalize; float:left; vertical-align:middle; padding-top:5px;}
+
+.contactPerson{
+  text-transform: none;  
+  float:left; vertical-align:middle;  
+  width:50%;
+}
+
+.contactPerson-value{
+  text-transform: none;  
+  float:left; vertical-align:middle;  
+}
+
+.table-wrapper-payment {}
+.table-payment-col {background:#ffffff; border:1px solid #cccccc; font-size:12px;}
+.table-payment-col-drop {background:#ffffff; border:1px solid #cccccc; font-size:12px;}
+.table-payment-col-space-title {padding:10px 15px 5px; font-size:14px;}
+.table-payment-col-space-total-top {padding:10px 15px 3px; font-size:14px; vertical-align:bottom; background-color:#efefef; }
+.table-payment-col-space-total-middle {padding:10px 15px; font-size:14px; background-color:#dddddd; }
+.table-payment-col-space-total-bottom {padding:3px 15px 10px; font-size:14px; vertical-align:top; background-color:#efefef; }
+.table-payment-col-space {padding:3px 15px;}
+.redfont {color:#f20000;}
+
+#grey-container {overflow:auto; background:#efefef;}
+#footer{overflow:auto; width:730px; margin:20px auto; page-break-inside:avoid;}
+.footer-first-col {vertical-align:middle; font-size:11px; color:#666666; padding:10px; float:left;}
+a.underline {text-decoration:underline; color:#666666;}
+.footer-logo {float:right;}
+
+.icon-aeroplane-white {display:inline}
+.icon-aeroplane-black { display:none; }
+.icon-arrow-white {display:inline}
+.icon-arrow-black { display:none; }
+
+.barcode 
+{
+	height:69px; 
+	width:124px;
+}
+
+@media only screen {
+	#divADSpace {overflow:auto; margin:15px 0px 40px;}
+	#divCheckInImage {overflow:auto; margin:15px 0px 40px;}
+}
+
+/* FOR RESPONSIVE */
+@media only screen 
+and (min-width : 0px) 
+and (max-width : 699px) {
+body {text-align:center;}
+a:hover, a:focus {text-decoration: none;}
+#container {width:100%;}
+#grey-container {width:100%;}
+#mob-save-pdf {display:block;}
+.logo {padding-left:0; float:none; margin:0 auto;}
+.save-and-print {display:none;}
+.ti-title {float:none;}
+.ti-title-invoice {float:none;}
+.ti-guest {float:none;}
+.ti-guest-table {width:90%; text-align:left; text-transform: none; margin:0 auto; min-width:0; max-width:none;}
+.ti-guest-paymentdetail-table {width:90%; text-align:left; margin:0 auto; min-width:0; max-width:none;}
+.ti-pnr {float:none; background:#f7f7f7; width:100%; margin-top:10px;}
+.table-title {float:none;}
+.table-image {display:none;}
+.table-image-mmb {display:none;}
+#divCheckInImage {display:none;overflow:hidden; margin:0px;}
+#divADSpace {display:none;overflow:hidden; margin:0px;}
+#footer {width:100%;}
+.table-footer-logo {float:none; text-align:center;}
+.footer-logo {float:none;}
+.table-title-addons {float:none; padding-top:none;}
+.table-title-payment {float:none; padding-top:none;}
+.table-first-col {text-align:left;}
+.table-second-col {text-align:left;}
+.table-payment-col {text-align:left; width:99%; float:left;}
+.table-payment-col-drop {text-align:left; width:99%; float:left; margin-top:10px; padding-bottom:10px;}
+a.underline {text-decoration:underline; color:#666666;}
+.table-fine-line {text-align:left;}
+.table-fine-line-notes {text-align:left;}
+.table-fine-line-address {text-align:left;}
+
+.pnr-number{
+    /*font-size:30px;
+    font-family:Times News Roman;
+    color:#f20000;*/
+    font-size:30px;
+    text-align:left;
+    font-family:Times News Roman;
+    color:#f20000;
+}
+}
+
+@media only screen {
+	#divADSpace {overflow:auto; margin:15px 0px 40px;}
+	#divCheckInImage {overflow:auto; margin:15px 0px 40px;}
+}
+
+/* FOR PRINTING RESPONSIVE */
+@media print
+{
+body { -moz-transform: scale(0.9);}
+.save-and-print { display:none; }
+.print-invoice-button { display:none; }
+.ti-title { padding-top:40px;}
+
+.trTotalPaid { display:none !important; }
+
+.table-header {font-size:16px; background:#333333; font-weight:bold; color:#ffffff; padding:10px; }
+.table-image {display:none;}
+.table-image-mmb {display:none;}
+
+#divManageMyBooking {display:none;}
+#divCheckInImage {display:none;}
+
+#divPaymentDetails {display:none;}
+#divADSpace {display:none;}
+#grey-container {display:none;}
+
+.table-flythru-col-addons {background:#cccccc; font-size:14px; padding:8px; border:1px solid #cccccc; }
+.table-payment-col-space-total-top {padding:10px 15px 3px; font-size:14px; vertical-align:bottom; background-color:#efefef; }
+.table-payment-col-space-total-middle {padding:10px 15px; font-size:14px; background-color:#dddddd; }
+.table-payment-col-space-total-bottom {padding:3px 15px 10px; font-size:14px; vertical-align:top; background-color:#efefef; }
+
+.icon-aeroplane-white { display:none; }
+.icon-aeroplane-black { display:inline}
+.icon-arrow-white { display:none; }
+.icon-arrow-black {display:inline}
+}
